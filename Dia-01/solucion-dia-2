@@ -1,0 +1,54 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package dia02ejercicio;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author dylan
+ */
+public class Dia02Ejercicio {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+      
+        Scanner leer = new Scanner(System.in);
+        
+        System.out.println("Ejercicio realizado por Dylan!");
+        
+        System.out.println("Ingresa un numero entre el 10 y el 20");
+        int numero = leer.nextInt();
+        System.out.println("");
+        System.out.println("-----------------");
+        
+        if(numero > 9 && numero < 21){
+           for (int i = 0; i < numero; i++) {
+                System.out.println(1 + i );
+            }
+            System.out.println("");
+            System.out.println("---------------");
+            System.out.println("");
+            for (int j = 30; j  >= numero; j--) {
+                   System.out.println(j);   
+               }
+                 
+        }else{
+            while(numero < 10 && numero > 20){
+                System.out.println("Tecleaste un numero incorrecto! TECLEA NUEVAMENTE UN NUMERO (10-20)");
+                numero = leer.nextInt();
+            }
+            
+            
+            }
+        }
+        
+        
+    }
+    
+
